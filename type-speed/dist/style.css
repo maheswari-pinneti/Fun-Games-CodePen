@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff9a8b, #ff6a00, #ffcb00, #66ff66);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.game-container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 600px;
+}
+
+.game-header h1 {
+  font-size: 36px;
+}
+
+.sentence-container {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 80%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff6347;
+}
+
+button {
+  background-color: #ff6347;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff4500;
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#time-container {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#speed-container {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.keyboard {
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  padding: 15px;
+  font-size: 18px;
+  margin: 5px;
+  background-color: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.key:hover {
+  background-color: #ff6347;
+}
+
+.key.active {
+  background-color: #66ff66;
+}
